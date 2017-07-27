@@ -40,12 +40,11 @@ The example is given in two versions:
         
     File "two_layer_NN.cu" is the tester, in which layers are created and predictions are made according to the above two layers algorithms.  
     This code works only with single precision float at present.
-<br><br>
 
 In the offered example, the Python tester generates a random two layers model, with 4x10 dims in the first layer and 10x3 in the second.  
 Then, it creates 5 random samples (each in a vector of size 4), and is given the correct classifiers.  
 After this step the Python script predicts the scores after all layers, and calculates the losses of all samples according to the classifiers.  
-<br><br>
+<br>
 In the CUDA/CUDNN tester, the weights/bias/input_samples/classifiers generated randomly by the Python code are copied/pasted into an input file,  
 and are input to the CUDA/CUDNN tester as arraies when the file is loaded.  
 Then the scores and losses of all samples are predicted (in sequence) and compared with what Python gives out.  
