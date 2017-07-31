@@ -43,7 +43,7 @@ This file uses CUDA/CUDNN/CUBLAS libraries, and offers:
 This tester is from repo /paesanilab/NeuralNets/testcase_forCUDA/ which is originally written in Python with Keras/Theano support.  
 In that repo, the trained layers weights/bias were saved in a HDF5 file, and testing samples were written to a text file (in different precisons, respectively).  
 The above files are loaded by this C++ code attemping to reproduce similar results as in Python, for the purpose of testing CUDA/CUDNN/CUBLAS utility in C++.  
-File *single double_precision_keras_prediction.csv* contains the results from Keras/Theano based Python program.  
+File *single/double_precision_keras_prediction.csv* contains the results from Keras/Theano based Python program.  
 
 The results in single floating point precision tester have a difference of around 1e-7, and in double floating point precision have a difference of around 1e-15.
     
